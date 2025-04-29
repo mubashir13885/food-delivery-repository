@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/user/Header'
 import { Outlet } from "react-router-dom";
 import Cartpage from '../pages/user/Cartpage';
-import Footer from '../components/user/footer';
+import Footer from '../components/user/Footer';
 import Heropage from '../components/user/Heropage';
 
 function UserLayout() {

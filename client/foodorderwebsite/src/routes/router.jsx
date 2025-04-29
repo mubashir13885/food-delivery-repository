@@ -11,9 +11,12 @@ import Paymentcancel from "../pages/user/Paymentcancel";
 import Admindshboard from "../pages/Admin/Admindshboard";
 import List from "../pages/Admin/List";
 import Order from "../pages/Admin/Order";
-import UserLayout from "../layout/userLayout";
 import Add from "../pages/Admin/Add";
 import HomePage from "../pages/user/HomePage";
+import UserLayout from "../layout/userLayout";
+
+
+
 
 
 
@@ -22,7 +25,7 @@ import HomePage from "../pages/user/HomePage";
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <UserLayout/>,
+      element:<UserLayout/>,
       errorElement: <h1> Error Page </h1>,
       children:[
         {
@@ -69,7 +72,7 @@ export const router = createBrowserRouter([
     },
      {
         path: "/admin",
-        element: <UserLayout/>,
+        element:<UserLayout/>,
         children: [{
             path: "login",
             element: <Login role="admin" />

@@ -7,6 +7,7 @@ import Heropage from '../components/user/Heropage';
 
 function UserLayout() {
   return (
+    
     <div className='min-h-screen bg-white text-black  flex flex-col'>
         <Header />
        
@@ -21,5 +22,6 @@ function UserLayout() {
 
   )
 }
+
 
 export default UserLayout

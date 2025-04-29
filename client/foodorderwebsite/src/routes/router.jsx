@@ -13,7 +13,8 @@ import List from "../pages/Admin/List";
 import Order from "../pages/Admin/Order";
 import Add from "../pages/Admin/Add";
 import HomePage from "../pages/user/HomePage";
-import UserLayout from "../layout/userLayout";
+import UserLayout from "../layout/UserLayout";
+
 
 
 

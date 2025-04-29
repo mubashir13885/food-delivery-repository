@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { showResto } from '../../services/restoApi';
+
 import { useNavigate } from 'react-router-dom';
+import { showResto } from '../../services/RestoApi';
 
 function Restaurant() {
   const navigate = useNavigate()

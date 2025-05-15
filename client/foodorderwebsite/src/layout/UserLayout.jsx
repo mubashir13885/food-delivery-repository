@@ -2,8 +2,8 @@ import React from 'react'
 import Header from '../components/user/Header'
 import { Outlet } from "react-router-dom";
 import Cartpage from '../pages/user/Cartpage';
-import Footer from '../components/user/Footer';
 import Heropage from '../components/user/Heropage';
+import Footer from '../components/user/Footer';
 
 function UserLayout() {
   return (
@@ -17,7 +17,7 @@ function UserLayout() {
          </div>
         
     <div>
-    <Footer/>
+     <Footer/>
     </div>
         </div>
 

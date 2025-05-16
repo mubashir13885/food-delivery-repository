@@ -21,7 +21,8 @@ app.get("/", (req, res) => {
 connectDb()
 
 app.use(cors({
-origin:(process.env.FRONTENT_URL)
+origin:'https://food-delivery-client-sigma.vercel.app/',
+credentials:true
 }))
 app.use(express.json())
 app.use(cookieParser())

@@ -6,7 +6,7 @@ const upload = require("../middleware/multer")
 const itemRouter = require("express").Router()
 
 
-itemRouter.post("/create",authAdmin,upload.single("image"),create)
+itemRouter.post("/create",upload.single("image"),create)
 itemRouter.get("/showitems",listItem)
 itemRouter.get("/itemdetails/:itemId",itemDetails)
 itemRouter.patch("/itemupdate/:itemId",upload.single("image"),updateDetails)

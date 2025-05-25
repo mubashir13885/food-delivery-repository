@@ -6,7 +6,7 @@ const upload = require('../middleware/multer')
 const restoRoter = require('express').Router()
 
 
-restoRoter.post("/create",authAdmin,upload.single("image"),create)
+restoRoter.post("/create",upload.single("image"),create)
 restoRoter.get("/showrestaurants",listRestaurant)
 restoRoter.get("/restodetails/:restaurantId",restaurantDetails)
 restoRoter.patch("/update/:restaurantId",upload.single("image"),updateDetails)

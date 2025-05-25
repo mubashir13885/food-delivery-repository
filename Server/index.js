@@ -9,6 +9,7 @@ const itemRouter = require('./routes/itemRoutes')
 const cartRouter = require('./routes/cartRoutes')
 const cors =require('cors')
 const paymentRouter = require('./routes/paymetRoutes')
+const ordeRouter = require('./routes/orderRoutes')
 
 
 
@@ -21,7 +22,7 @@ app.get("/", (req, res) => {
 connectDb()
 
 app.use(cors({
-origin:'https://food-delivery-client-nmpy.vercel.app',
+origin:'http://localhost:5173',
 credentials:true
 }))
 app.use(express.json())
@@ -34,6 +35,7 @@ app.use("/restaurant",restoRoter)
 app.use("/menu",itemRouter)
 app.use("/cart",cartRouter)
 app.use("/payment",paymentRouter)
+app.use("/order",ordeRouter)
 
 
 app.listen(process.env.PORT,()=>{

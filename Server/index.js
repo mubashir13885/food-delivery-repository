@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 connectDb()
 
 app.use(cors({
-origin:'https://food-delivery-repository.vercel.app',
+origin:'https://food-delivery-client-nmpy.vercel.app',
 credentials:true
 }))
 app.use(express.json())
